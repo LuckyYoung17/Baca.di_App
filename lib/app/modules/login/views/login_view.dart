@@ -32,12 +32,12 @@ class LoginView extends GetView<LoginController> {
           children: [
             const MyJarak(flex: 6),
             Image.asset(
-              'logo.png',
+              'assets/logo.png',
               width: widthFullBody * 0.3,
             ),
             const MyJarak(flex: 2),
             AutoSizeText(
-              "Register",
+              "Login",
               minFontSize: 20,
               maxFontSize: 27,
               style: TextStyle(

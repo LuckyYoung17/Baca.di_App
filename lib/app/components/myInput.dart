@@ -35,6 +35,7 @@ class myInput extends StatelessWidget {
             textAlign: TextAlign.left,
             textAlignVertical: TextAlignVertical.center,
             style: TextStyle(
+              color: Colors.white,
                 fontSize: 13,
                 fontWeight: FontWeight.bold,
                 fontFamily: GoogleFonts.poppins().fontFamily),
@@ -59,6 +60,7 @@ class myInput extends StatelessWidget {
               hintText: hintText,
               hintStyle: TextStyle(
                   fontSize: 12,
+                  color: Colors.white,
                   fontWeight: FontWeight.normal,
                   fontFamily: GoogleFonts.poppins().fontFamily),
               filled: true,
@@ -88,6 +90,7 @@ class myInput extends StatelessWidget {
             textAlign: TextAlign.left,
             textAlignVertical: TextAlignVertical.center,
             style: TextStyle(
+              color: Colors.white,
                 fontSize: 13,
                 fontWeight: FontWeight.bold,
                 fontFamily: GoogleFonts.poppins().fontFamily),
@@ -104,6 +107,7 @@ class myInput extends StatelessWidget {
               ),
               hintText: hintText,
               hintStyle: TextStyle(
+                color: Colors.white,
                   fontSize: 12,
                   fontWeight: FontWeight.normal,
                   fontFamily: GoogleFonts.poppins().fontFamily),
