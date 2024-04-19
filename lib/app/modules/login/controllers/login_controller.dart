@@ -84,11 +84,10 @@ class LoginController extends GetxController {
         if (response.statusCode == 200) {
           ResponseLogin responseLogin = ResponseLogin.fromJson(response.data);
           await StorageProvider.write(StorageKey.status, "logged");
-          await StorageProvider.write(
-              StorageKey.username, responseLogin.data!.username.toString());
-          await StorageProvider.write(
-              StorageKey.idUser, responseLogin.data!.id.toString());
-          Get.offAllNamed(Routes.HOME);
+          await StorageProvider.write(StorageKey.username, responseLogin.data!.username.toString());
+          await StorageProvider.write(StorageKey.idUser, responseLogin.data!.id.toString());
+          await StorageProvider.write(StorageKey.bearerToken, responseLogin.data!.token.toString());
+          Get.offAllNamed(Routes.DASHBOARD);
           Get.snackbar("Success", "Login Berhasil",
               backgroundColor: Colors.red);
         } else {

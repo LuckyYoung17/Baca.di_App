@@ -32,7 +32,7 @@ class RegisterView extends GetView<RegisterController> {
           children: [
             const MyJarak(flex: 6),
             Image.asset(
-              'logo.png',
+              'assets/logo.png',
               width: widthFullBody * 0.3,
             ),
             const MyJarak(flex: 2),
